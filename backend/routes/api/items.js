@@ -148,7 +148,7 @@ router.post("/", auth.required, function(req, res, next) {
 
       item.seller = user;
 
-      //check for empty image
+      // Check for empty image - Set default
       if (!item.image) {
         item.image = '/placeholder.png';
       }
